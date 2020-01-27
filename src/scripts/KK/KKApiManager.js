@@ -10,7 +10,7 @@ const API = {
             console.log(movieArr);
             KKDOMEntryManager.KKinputToDom(movieArr);
          })
-        },
+        }
     
 }
 
