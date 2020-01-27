@@ -1,6 +1,6 @@
 const mainDom = document.querySelector('.mainDom');
-mainDom.innerHTML += 
-`<nav class="navbar">
+mainDom.innerHTML +=
+    `<nav class="navbar">
 <h1>Welcome To Nashville</h1>
 </nav>
 <div class="searchDom">
@@ -25,6 +25,10 @@ mainDom.innerHTML +=
     <button type="button" id="KK-btn">Search!</button>
 </div>
 </div>
+
+<div id="results-container">
+</div>
+
 <footer class="foobar">
 <h1>Thanks!<h1>
 </footer>`
