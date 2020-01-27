@@ -10,6 +10,14 @@ const API = {
             console.log(movieArr);
             KKDOMEntryManager.KKinputToDom(movieArr);
          })
+        },
+        searchRestaurantData: () => {
+           fetch(KKURL)
+            .then (r=>r.json())
+            .then(movieData => {
+               const movieArr = movieData.restaurants
+               return movieArr;
+            })
         }
     
 }
