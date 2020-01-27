@@ -1,2 +1,2 @@
 .DS_Store
-/scripts/APIKeys.js
+src/scripts/APIKeys.js
