@@ -25,6 +25,9 @@ mainDom.innerHTML +=
     <button type="button" id="KK-btn">Search!</button>
 </div>
 </div>
+
+<div id="results-container">
+</div>
 <footer class="foobar">
 <h1>Thanks!<h1>
 </footer>`
