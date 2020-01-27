@@ -1,6 +1,6 @@
 const mainDom = document.querySelector('.mainDom');
-mainDom.innerHTML += 
-`<nav class="navbar">
+mainDom.innerHTML +=
+    `<nav class="navbar">
 <h1>Welcome To Nashville</h1>
 </nav>
 <div class="searchDom">
