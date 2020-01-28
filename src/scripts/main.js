@@ -1,1 +1,2 @@
 // getArt();
+// API.searchForCuisineID('Asian');
