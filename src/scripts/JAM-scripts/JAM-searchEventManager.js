@@ -22,15 +22,10 @@ const searchEventManager = {
                 searchResultPromise.then(searchResults => {
                     searchResultsDomManager.renderSearchResults(searchResults)
                    
-                    // My attempt to make a conditional return of no results
-                   
-                    // if (searchResults === []) {
-                    //     results.innerHTML = "No bus stops with that criteria. Keep Searching! :)"
-                    // }
-                    // console.log(searchResults)
                 })
             };
         
         })
-    }
+    },
+
 }

@@ -15,6 +15,15 @@ const searchResultsDomManager = {
         `
     },
 
+    // itineraryFactory() {
+    //     return `
+    //         <section class='parkFavorite'>
+    //             <div class='parkNameSaved'>${document.}
+
+    //         </section>
+    //     `
+    // },
+
 
     renderSearchResults(searchResults) {
         const container = document.querySelector("#results-container");
