@@ -6,10 +6,11 @@ const searchResultsDomManager = {
         console.log(addressArr)
 
         return `
-            <section class="park">
+            <section class="park" id='${park.park_name}'>
                 <div class="park-name">${park.park_name}</div>
                 <div class="address">${addressArr[3]}</div>
                 <div class="size">${park.acres} acres</div>
+                <button type="button" id='btn-${park.park_name}'>Save</button>
             </section>
         `
     },
