@@ -1,4 +1,11 @@
-parksSearchEventManager.addSearchClickEventListener()
 
+//  **** Event Listeners for Parks! *****
+parksSearchEventManager.addSearchClickEventListener()
 parksSearchEventManager.addSearchEnterEventListener()
-searchTicketMaster()
+
+parksSearchEventManager.addItineraryEventListener()
+
+
+//  ***** Bito's Concert Results *****
+
+// searchTicketMaster()

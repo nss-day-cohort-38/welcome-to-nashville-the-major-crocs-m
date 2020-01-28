@@ -6,26 +6,16 @@ const searchResultsDomManager = {
         console.log(addressArr)
 
         return `
-            <section class="park" id='${park.park_name}'>
-                <div class="park-name">${park.park_name}</div>
-                <div class="address">${addressArr[3]}</div>
-                <div class="size">${park.acres} acres</div>
-                <button type="button" id='btn-${park.park_name}'>Add to Itinerary</button>
+            <section class="park" id='${park.acres}'>
+                <h2 class="park-name" id='name-${park.acres}'>${park.park_name}</h2>
+                <p class="address" id='address-${park.acres}'>${addressArr[3]}</p>
+                <p class="size">${park.acres} acres</p>
+                <button type="button" id='saveBtn-${park.acres}'>Add to Itinerary</button>
             </section>
         `
     },
 
-    // itineraryFactory() {
-    //     return `
-    //         <section class='parkFavorite'>
-    //             <div class='parkNameSaved'>${document.}
-
-    //         </section>
-    //     `
-    // },
-
-
-    renderSearchResults(searchResults) {
+    renderParkResults(searchResults) {
         const container = document.querySelector("#results-container");
         container.innerHTML = ""
         searchResults.forEach(park => {
@@ -36,6 +26,23 @@ const searchResultsDomManager = {
             container.innerHTML = "No park found . . . Search Again!"
         }
         console.log(searchResults)
+    },
+
+    itineraryFactory(park) {
+        const addressArr = park.mapped_location.human_address.split("\"")
+
+        return `
+            <section class="park" id='save-${park.acres}'>
+                <h2 class="park-name">${park.park_name}</h2>
+                <p class="address">${addressArr[3]}</p>
+            </section>
+        `
+    },
+
+    renderItinerary(parkSelection) {
+        container = document.getElementById('itinerary')
+
+        container.innerHTML += this.itineraryFactory(parkSelection)
     }
     
 }

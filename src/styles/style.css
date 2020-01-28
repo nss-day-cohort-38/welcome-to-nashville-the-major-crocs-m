@@ -1,3 +1,42 @@
+
+/* ***** Header and Nav Styling ***** */
+
+nav {
+    text-align: center ;
+}
+
+
+
+
+/* ***** Results Styling ***** */
+
+#results-container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#results-container section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* **** Jeremy's Park's Styling **** */
+
+/* #results-container .park {
+    display: flex;
+    flex-direction: column;
+} */
+
+#results-container section h2 {
+    border-bottom: 2px solid black;
+}
+
+/* **** Kurt's Restaurant Styling **** */
+
 .kk-img {
     max-width: 140px;
     max-height: auto;
