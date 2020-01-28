@@ -1,9 +1,15 @@
 const searchResultsDomManager = {
+    
+    
     parkFactory(park) {
+        const addressArr = park.mapped_location.human_address.split("\"")
+        console.log(addressArr)
+
         return `
             <section class="park">
                 <div class="park-name">${park.park_name}</div>
-                <div class="address">${park.mapped_location.human_address.address}</div>
+                <div class="address">${addressArr[3]}</div>
+                <div class="size">${park.acres} acres</div>
             </section>
         `
     },

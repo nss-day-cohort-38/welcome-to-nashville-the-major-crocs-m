@@ -6,7 +6,24 @@ mainDom.innerHTML +=
 <div class="searchDom">
 <div  class="parks">
     <label for="park-search">Parks:</label>
-    <input class="park-search" id="JAM-input" placeholder="Parks Go Here!" type="text">
+    <select class="park-search" id="JAM-select" placeholder="Parks Features">
+        <option value="community_center">Community Center</option>
+        <option value="nature_center">Nature Center</option>
+        <option value="playground">Playground</option>
+        <option value="picnic_shelters">Picnic Shelters</option>
+        <option value="restrooms_available">Restrooms Available</option>
+        <option value="ada_accessible">ADA Accessible</option>
+        <option value="dog_park">Dog Park</option>
+        <option value="baseball_fields">Baseball Fields</option>
+        <option value="basketball_courts">Basketball Courts</option>
+        <option value="disc_golf">Disc Golf</option>
+        <option value="golf_course">Golf Course</option>
+        <option value="hiking_trails">Hiking Trails</option>
+        <option value="horse_trails">Horse Trails</option>
+        <option value="mountain_bike_trails">Mountain Bike Trails</option>
+        <option value="canoe_launch">Canoe Launch</option>
+        <option value="boat_launch">Boat Launch</option>
+    </select>
     <button type="button" id="JAM-btn">Search!</button>
 </div>
 <div  class="concerts">
@@ -27,6 +44,9 @@ mainDom.innerHTML +=
 </div>
 
 <div id="results-container">
+</div>
+
+<div id="itenerary">
 </div>
 
 <footer class="foobar">
