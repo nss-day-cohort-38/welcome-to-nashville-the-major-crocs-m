@@ -1,4 +1,31 @@
+* {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
 .kk-img {
     max-width: 140px;
     max-height: auto;
 }
+body {
+    background: url("https://live.staticflickr.com/543/18500881285_18de0890a7_b.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    /* background-image: linear-gradient( midnightblue, rgba(43,43,43,0.9)); */
+    background: midnightblue;
+    color: white;
+    height: 100px;
+    align-items: center;
+    opacity: 0.8;
+}
+nav h1 {
+    font-size: 80px;
+    opacity: 1.0;
+}
+
