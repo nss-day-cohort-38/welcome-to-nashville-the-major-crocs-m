@@ -1,4 +1,4 @@
-const searchEventManager = {
+const parksSearchEventManager = {
     addSearchClickEventListener() {
         const button = document.getElementById("JAM-btn")
         button.addEventListener("click", () => {

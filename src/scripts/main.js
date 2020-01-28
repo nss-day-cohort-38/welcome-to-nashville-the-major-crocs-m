@@ -1,3 +1,4 @@
-searchEventManager.addSearchClickEventListener()
+parksSearchEventManager.addSearchClickEventListener()
 
-searchEventManager.addSearchEnterEventListener()
+parksSearchEventManager.addSearchEnterEventListener()
+// searchTicketMaster()
