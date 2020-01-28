@@ -28,7 +28,6 @@ mainDom.innerHTML +=
 
 <div id="results-container">
 </div>
-
 <footer class="foobar">
 <h1>Thanks!<h1>
 </footer>`

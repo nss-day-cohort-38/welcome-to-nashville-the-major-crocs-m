@@ -1,6 +1,12 @@
-const bitoConcertHtml = (concert, index) => `
-  <li>
-    <span id="concertResultText-${index}">${concert.name}: ${concert._embedded.venues[0].name}</span>
-    <button type="button" id="concertResultButton-${index}">Save</button>
-  </li>
-  `
+  
+const concertDomFactory = (concert) => {
+    return `
+      <section class="concerts">
+        <div>Band: ${concert.name}</div>
+        <div>Date: ${concert.dates.start.localDate}</div>
+        <div>Genre: ${concert.classifications[0].genre.name}</div>
+      </section>
+    `;
+  };
+  
+  
