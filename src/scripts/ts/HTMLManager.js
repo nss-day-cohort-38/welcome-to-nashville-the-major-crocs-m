@@ -1,3 +1,5 @@
+
+// I want this code to appear when user hits search btn 
 const artFactory = (art) => {
     return `
         <section style="margin-top: 10px">
@@ -8,3 +10,9 @@ const artFactory = (art) => {
         <button id="add-art" style="margin-bottom: 10px">Add to Itinerary</button>
     `
 }
+
+function getUserInput() {
+    const val = document.getElementById("ts-select").value;
+    tsAPI.searchArtwork(val);
+}
+console.log(val);
