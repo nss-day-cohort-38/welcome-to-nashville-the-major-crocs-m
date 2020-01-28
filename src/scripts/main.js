@@ -1,2 +1,0 @@
-// getArt();
-// searchTicketMaster()
