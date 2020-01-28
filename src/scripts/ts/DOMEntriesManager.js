@@ -3,6 +3,7 @@
 const tsContainer = document.querySelector("#results-container")
 
 const renderArt = (artWorks) => {
+    tsContainer.innerHTML = "";
     artWorks.forEach(art => {
         tsContainer.innerHTML += artFactory(art);
     })

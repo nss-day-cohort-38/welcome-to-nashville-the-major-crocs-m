@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,47 @@
     <title>Welcome To Nashville</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
+
     <div class="mainDom">
-
     </div>
-    <!-- main 1 -->
-    <script src="scripts/APIKeys.js"></script>
-    <script src="scripts/mainDOMEntry.js"></script>
-    <!-- Restaurants -->
-    <script src="scripts/KK/KKHtmlGenerator.js"></script>
-    <script src="scripts/KK/KKDomEntryManager.js"></script>
-    <script src="scripts/KK/KKUserInput.js"></script>
-    <script src="scripts/KK/KKApiManager.js"></script>
 
-    <!-- Concerts  -->
-    <script src="/scripts/concerts-bito/api.js"></script>
-    <script src="/scripts/concerts-bito/eventListeners.js"></script>
 
-    <!-- Art -->
-    <script src="scripts/ts/HTMLManager.js"></script>
-    <script src="scripts/ts/DOMEntriesManager.js"></script>
-    <script src="scripts/ts/APImanager.js"></script>
+    <div id='scriptsContainer'>
+        <!-- main 1 -->
+        <script src="scripts/APIKeys.js"></script>
+        <script src="scripts/mainDOMEntry.js"></script>
 
-    <!-- main -->
-    <script src="scripts/addeventlistener.js"></script>
-    <script src="scripts/main.js"></script>
+        <!-- Restaurants -->
+        <script src="scripts/KK/KKHtmlGenerator.js"></script>
+        <script src="scripts/KK/KKDomEntryManager.js"></script>
+        <script src="scripts/KK/KKUserInput.js"></script>
+        <script src="scripts/KK/KKApiManager.js"></script>
+
+        <!-- Parks -->
+
+        <script src="scripts/JAM-scripts/JAM-searchResultsDomManager.js"></script>
+        <script src="scripts/JAM-scripts/JAM-searchEventManager.js"></script>
+        <script src="scripts/JAM-scripts/JAM-apiManager.js"></script>
+
+        <!-- Concerts  -->
+
+        <script src="scripts/concerts-bito/bitoApi.js"></script>
+        <script src="scripts/concerts-bito/bitoEventListeners.js"></script>
+        <script src="scripts/concerts-bito/bitoHtmlFactory.js"></script>
+
+        <!-- Art -->
+        <script src="scripts/ts/HTMLManager.js"></script>
+        <script src="scripts/ts/DOMEntriesManager.js"></script>
+        <script src="scripts/ts/APImanager.js"></script>
+
+
+        <!-- main -->
+        <script src="scripts/addeventlistener.js"></script>
+        <script src="scripts/main.js"></script>
+    </div>
+
 </body>
+
 </html>

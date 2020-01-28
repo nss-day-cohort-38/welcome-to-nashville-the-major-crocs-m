@@ -1,1 +1,0 @@
-const ticketMasterUrl = "https://app.ticketmaster.com/{package}/{version}/{resource}.json?apikey=**{9eIBOsZjX2Jv5L9ko0C7T9ezkmmhs0vH}"
