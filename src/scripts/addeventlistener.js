@@ -21,11 +21,10 @@ const resultsDiv = document.getElementById('results-container');
 resultsDiv.addEventListener('click', (event) => {
     const idSplit = event.target.id.split('-')
     if (event.target.id.includes('saveBtn')) {
-    objectCreator.createObjectFromID(idSplit[1])
+        objectCreator.createObjectFromID(idSplit[1])
+            .then(DbAPI.getItenerary)
+            .then(itneraryDomManager.renderItinerary)
     }
-    DbAPI.getItenerary().then(array => {
-        itneraryDomManager.renderItinerary(array);
-    });
 })
 
 //View Itenerary 

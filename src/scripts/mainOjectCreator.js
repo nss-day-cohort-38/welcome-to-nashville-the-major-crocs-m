@@ -4,7 +4,6 @@ const objectCreator = {
             "name": document.getElementById(`name-${id}`).innerHTML,
             "address":document.getElementById(`address-${id}`).innerHTML
         }
-        DbAPI.postDataToAPI(obj);
-        
+        return DbAPI.postDataToAPI(obj);
     }
 }
