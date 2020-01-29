@@ -8,6 +8,16 @@ const KKDOMEntryManager = {
             let html = KKHtmlGenerator.RestaurantFactory(obj)
             resultsContainer.innerHTML += html;
         })
+    }, IteneraryinputToDom: (arr) => {
+        resultsContainer.innerHTML = "";
+        arr.forEach(obj => {
+            let html = KKHtmlGenerator.databaseFactory(obj);
+            resultsContainer.innerHTML += html;
+        }) 
+    }, renderWhoops: () => {
+        resultsContainer.innerHTML = "";
+        let html = KKHtmlGenerator.unknownFactory();
+        resultsContainer.innerHTML += html;
     }
 
 }

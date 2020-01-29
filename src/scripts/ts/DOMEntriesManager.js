@@ -2,7 +2,7 @@
 // DOM.
 const tsContainer = document.querySelector("#results-container")
 
-const renderArt = (artWorks) => {
+const renderAllArt = (artWorks) => {
     tsContainer.innerHTML = "";
     artWorks.forEach(art => {
         tsContainer.innerHTML += artFactory(art);
@@ -10,7 +10,10 @@ const renderArt = (artWorks) => {
 }
 
 
-
+const renderArt = (art) => {
+    tsContainer.innerHTML = "";
+    tsContainer.innerHTML += artFactory(art);
+}
 
 
 
