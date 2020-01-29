@@ -1,6 +1,7 @@
 // Parks
 
-// Concerts
+// Concerts 
+searchConcertManager.addSearchBtnClick("metal")
 // searchTicketMaster()
 
 // Restaurants
