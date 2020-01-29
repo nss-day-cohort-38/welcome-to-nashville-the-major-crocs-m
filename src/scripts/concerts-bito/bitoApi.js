@@ -47,8 +47,9 @@ concertSearchResultsDom = {
       
       concertButton.addEventListener("click", () => {
         console.log("button click handler", concertButton);
-        const input = document.getElementsByClassName("concert-search");
+        const input = document.querySelector(".concert-search");
         const searchCriteria = input.value;
+        console.log("test", searchCriteria)
         const searchResultPromise = grabTicketMaster(searchCriteria);
         searchResultPromise.then(userResults => {
             const concertArray = userResults._embedded.events

@@ -1,11 +1,8 @@
 const dbURL = `http://localhost:8088/Itenerary_Items`;
 const DbAPI = {
     getItenerary: () => {
-        fetch(dbURL)
-            .then(r=>r.json())
-            .then(iten=> {
-                KKDOMEntryManager.IteneraryinputToDom(iten);
-            })
+        return fetch(dbURL).then(r=>r.json())
+        
     },
     postDataToAPI: (obj) => {
         fetch(dbURL, {
