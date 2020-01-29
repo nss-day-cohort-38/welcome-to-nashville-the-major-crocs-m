@@ -28,8 +28,17 @@ const searchResultsDomManager = {
         console.log(searchResults)
     },
 
+    // itineraryFactory(park) {
+    //     const addressArr = park.mapped_location.human_address.split("\"")
+
+    //     return `
+    //         <section class="park" id='save-${park.acres}'>
+    //             <h2 class="park-name">${park.park_name}</h2>
+    //             <p class="address">${addressArr[3]}</p>
+    //         </section>
+    //     `
+    // },
     itineraryFactory(park) {
-        const addressArr = park.mapped_location.human_address.split("\"")
 
         return `
             <section class="park" id='save-${park.acres}'>

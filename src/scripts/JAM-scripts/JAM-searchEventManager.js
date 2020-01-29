@@ -27,9 +27,9 @@ const parksSearchEventManager = {
     },
 
     addItineraryEventListener() {
-        const itineraryDiv = document.getElementById('results-container')
+        const resultsDiv = document.getElementById('results-container')
         
-        itineraryDiv.addEventListener('click', (event) => {
+        resultsDiv.addEventListener('click', (event) => {
             const idSplit = event.target.id.split('-')
             console.log(idSplit[1])
 
@@ -41,6 +41,7 @@ const parksSearchEventManager = {
                     console.log(searchResults)
                     searchResultsDomManager.renderItinerary(searchResults[0])
                     }
+                    // objectCreator.createObjectFromID(idSplit[1])
                 )
             }
     })
