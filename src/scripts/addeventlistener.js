@@ -14,10 +14,25 @@ const tsSearchBtn = document.querySelector("#TS-btn");
 tsSearchBtn.addEventListener("click", getUserInput);
 
 //Save Clickin!
+
+
+
 const resultsDiv = document.getElementById('results-container');
 resultsDiv.addEventListener('click', (event) => {
-    console.log(event);
-    objectCreator.createObjectFromID(event.target.id)
+    const idSplit = event.target.id.split('-')
+    console.log(idSplit[1])
+
+    if (event.target.id.includes('saveBtn')) {
+
+    const searchResultPromise = parksAPIManager.choosePark(idSplit[1])
+        
+        searchResultPromise.then(searchResults => {
+            console.log(searchResults)
+            searchResultsDomManager.renderItinerary(searchResults[0])
+            }
+            // objectCreator.createObjectFromID(idSplit[1])
+        )
+    }
 })
 
 //View Itenerary 

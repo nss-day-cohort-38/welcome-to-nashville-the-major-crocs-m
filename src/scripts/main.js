@@ -1,5 +1,4 @@
 // Parks
-parksSearchEventManager.addSearchEnterEventListener()
 
 // Concerts
 // searchTicketMaster()

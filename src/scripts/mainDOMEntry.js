@@ -1,12 +1,13 @@
 const mainDom = document.querySelector('.mainDom');
 mainDom.innerHTML +=
     `<nav class="navbar">
-<h1>Welcome To Nashville</h1>
-</nav>
-<div class="searchDom">
-<div  class="parks">
+        <h1>Welcome To Nashville</h1>
+    </nav>
+    <div class="searchDom">
+        <div  class="parks">
     <label for="park-search">Parks:</label>
     <select class="park-search" id="JAM-select" placeholder="Parks Features">
+        <option value="" selected disabled hidden>Select Park Feature</option>
         <option value="community_center">Community Center</option>
         <option value="nature_center">Nature Center</option>
         <option value="playground">Playground</option>
@@ -62,11 +63,11 @@ mainDom.innerHTML +=
 <button id="see_itenerary" type="button">View My Itenerary</button>
 </div>
 
-<div id="results-container">
-</div>
+    <div id="results-container">
+    </div>
 
-<div id="itenerary">
-</div>
+    <div id="itinerary">
+    </div>
 
 <footer class="foobar">
 <h1>Thanks!<h1>
