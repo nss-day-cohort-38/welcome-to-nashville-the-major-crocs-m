@@ -34,6 +34,7 @@ mainDom.innerHTML +=
 <div  class="arts">
     <label for="art-search">Artwork:</label>
     <select class="art-search" id="ts-select" placeholder="Artworks">
+        <option value="" selected disabled hidden>Select Artwork Feature</option>
         <option value="4743 REASONs">4743 REASONs</option>
         <option value="Adanedi">Adanedi</option>
         <option value="Adjusting the Perspective">Adjusting the Perspective</option>
