@@ -53,10 +53,14 @@ div.parks, div.concerts, div.arts, div.restaurant {
     height: 370px;
     overflow: scroll;
 }
+#itinerary {
+    background: white;
+}
 
 #results-container section {
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
 
 /* ***** Itinerary Styling ***** */
@@ -92,6 +96,19 @@ div.parks, div.concerts, div.arts, div.restaurant {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
 
+}
+button {
+    color: midnightblue;
+    opacity: none;
+    transition: 0.3s ease;
+    padding: 3px;
+    border-radius: 2px;
+}
+button:hover {
+    color: white;
+    background-color: midnightblue;
+    padding:4px;
+    transition: 0.3s ease;
 }
 .kk-img {
     max-width: 140px;

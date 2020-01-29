@@ -30,7 +30,7 @@ mainDom.innerHTML +=
             </div>
             <div  class="concerts">
                 <label for="concert-search">Concerts:</label>
-                <input class="concert-search" id="BM-input" placeholder="Concerts Go Here!" type="text">
+                <input class="concert-search" id="BM-input" placeholder="Search Genre Here!" type="text">
                 <button type="button" id="BM-btn">Search!</button>
             </div>
             <div  class="arts">

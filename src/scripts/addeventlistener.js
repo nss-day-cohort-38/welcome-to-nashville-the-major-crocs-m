@@ -19,18 +19,12 @@ tsSearchBtn.addEventListener("click", getUserInput);
 
 const resultsDiv = document.getElementById('results-container');
 resultsDiv.addEventListener('click', (event) => {
-    console.log(event);
     const idSplit = event.target.id.split('-')
-    console.log(idSplit[1])
-
     if (event.target.id.includes('saveBtn')) {
-
-    objectCreator.createObjectFromID(idSplit[1])
+        objectCreator.createObjectFromID(idSplit[1])
+            .then(DbAPI.getItenerary)
+            .then(itneraryDomManager.renderItinerary)
     }
-    DbAPI.getItenerary().then(array => {
-        itneraryDomManager.renderItinerary(array);
-        // console.log(array)
-    });
 })
 
 //View Itenerary 
