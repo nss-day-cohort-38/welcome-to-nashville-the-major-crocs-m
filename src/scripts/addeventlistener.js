@@ -2,6 +2,10 @@
 const buttonKurt = document.querySelector('#KK-btn');
 buttonKurt.addEventListener('click', KKUserInput.getUserInput);
 
+//parks event search listener
+parksSearchEventManager.addSearchClickEventListener();
+parksSearchEventManager.addSearchEnterEventListener();
+
 // Art 'Show All' button click:
 const artBtn = document.querySelector("#show-all");
 artBtn.addEventListener("click", tsAPI.getArtData);
