@@ -14,7 +14,6 @@ const grabTicketMaster = (searchInput) => {
 // vvv Render DOM vvv //
 concertSearchResultsDom = {
 
-  
     concertDomFactory(concert) {
       return `
       <section class="concerts">
@@ -24,7 +23,6 @@ concertSearchResultsDom = {
       </section>
       `;
     },
-    
     renderUserResults(userResults) {
       const container = document.querySelector("#results-container");
       container.innerHTML = ""

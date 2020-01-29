@@ -1,12 +1,13 @@
 const mainDom = document.querySelector('.mainDom');
 mainDom.innerHTML +=
     `<nav class="navbar">
-<h1>Welcome To Nashville</h1>
-</nav>
-<div class="searchDom">
-<div  class="parks">
+        <h1>Welcome To Nashville</h1>
+    </nav>
+    <div class="searchDom">
+        <div  class="parks">
     <label for="park-search">Parks:</label>
     <select class="park-search" id="JAM-select" placeholder="Parks Features">
+        <option value="" selected disabled hidden>Select Park Feature</option>
         <option value="community_center">Community Center</option>
         <option value="nature_center">Nature Center</option>
         <option value="playground">Playground</option>
@@ -28,13 +29,31 @@ mainDom.innerHTML +=
 </div>
 <div  class="concerts">
     <label for="concert-search">Concerts:</label>
-    <input class="concert-search" id="BM-input" placeholder="Concerts Go Here!" type="text">
+    <input class="concert-search" id="BM-input" placeholder="Type in a genre!" type="text">
     <button type="button" id="BM-btn">Search!</button>
 </div>
 <div  class="arts">
-    <label for="art-search">Art:</label>
-    <input class="art-search" id="TS-input" placeholder="Art Search" type="text">
+    <label for="art-search">Artwork:</label>
+    <select class="art-search" id="ts-select" placeholder="Artworks">
+        <option value="" selected disabled hidden>Select Artwork Feature</option>
+        <option value="4743 REASONs">4743 REASONs</option>
+        <option value="Adanedi">Adanedi</option>
+        <option value="Adjusting the Perspective">Adjusting the Perspective</option>
+        <option value="Afternoon Light, Arcade">Afternoon Light, Arcade</option>
+        <option value="Aileron">Aileron</option>
+        <option value="Air Wave">Air Wave</option>
+        <option value="Anchor in the Storm">Anchor in the Storm</option>
+        <option value="A Place to Gather Crowd">A Place to Gather Crowd</option>
+        <option value="Are We There Yet?">Are We There Yet?</option>
+        <option value="B.024.02">B.024.02</option>
+        <option value="Banjo">Banjo</option>
+        <option value="Bee Cycle">Bee Cycle</option>
+        <option value="Bellevue Bench Mark">Bellevue Bench Mark</option>
+        <option value="Bicycle Copse">Bicycle Copse</option>
+        <option value="Bling">Bling</option>
+    </select>
     <button type="button" id="TS-btn">Search!</button>
+    <button type="button" id="show-all">Show All</button>
 </div>
 <div  class="restaurant">
     <label for="restaurant-search">Restaurants:</label>
@@ -44,14 +63,12 @@ mainDom.innerHTML +=
 <button id="see_itenerary" type="button">View My Itenerary</button>
 </div>
 
-<div id="results-container">
-</div>
+    <div id="results-container">
+    </div>
 
-<div id="itenerary">
-</div>
+    <div id="itinerary">
+    </div>
 
 <footer class="foobar">
 <h1>Thanks!<h1>
 </footer>`
-
-

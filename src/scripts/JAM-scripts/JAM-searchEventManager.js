@@ -5,8 +5,8 @@ const parksSearchEventManager = {
             const option = document.getElementById("JAM-select")
             const searchResultPromise = parksAPIManager.searchNashvilleParks(option)
             searchResultPromise.then(searchResults => {
-                searchResultsDomManager.renderSearchResults(searchResults)
-                console.log(option.value)
+                searchResultsDomManager.renderParkResults(searchResults)
+                // console.log(option.value)
             })
         })
     },
@@ -16,11 +16,9 @@ const parksSearchEventManager = {
         
         option.addEventListener('keyup', function (e) {
             if (e.key === 'Enter') {
-                console.log(option.value)
-                const searchCriteria = option.querySelector('option').value
-                const searchResultPromise = parksAPIManager.searchNashvilleParks(searchCriteria)
+                const searchResultPromise = parksAPIManager.searchNashvilleParks(option)
                 searchResultPromise.then(searchResults => {
-                    searchResultsDomManager.renderSearchResults(searchResults)
+                    searchResultsDomManager.renderParksResults(searchResults)
                    
                 })
             };
@@ -28,4 +26,24 @@ const parksSearchEventManager = {
         })
     },
 
+    addItineraryEventListener() {
+        const resultsDiv = document.getElementById('results-container')
+        
+        resultsDiv.addEventListener('click', (event) => {
+            const idSplit = event.target.id.split('-')
+            console.log(idSplit[1])
+
+            if (event.target.id.includes('saveBtn')) {
+
+            const searchResultPromise = parksAPIManager.choosePark(idSplit[1])
+                
+                searchResultPromise.then(searchResults => {
+                    console.log(searchResults)
+                    searchResultsDomManager.renderItinerary(searchResults[0])
+                    }
+                    // objectCreator.createObjectFromID(idSplit[1])
+                )
+            }
+    })
+    }
 }

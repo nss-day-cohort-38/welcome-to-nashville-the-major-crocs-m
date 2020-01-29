@@ -1,2 +1,9 @@
-searchConcertManager.addSearchBtnClick()
-parksSearchEventManager.addSearchEnterEventListener()
+// Parks
+
+// Concerts 
+searchConcertManager.addSearchBtnClick("metal")
+// searchTicketMaster()
+
+// Restaurants
+
+// Art
