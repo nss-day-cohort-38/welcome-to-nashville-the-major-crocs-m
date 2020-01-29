@@ -18,7 +18,7 @@ const parksSearchEventManager = {
             if (e.key === 'Enter') {
                 const searchResultPromise = parksAPIManager.searchNashvilleParks(option)
                 searchResultPromise.then(searchResults => {
-                    searchResultsDomManager.renderParksResults(searchResults)
+                    searchResultsDomManager.renderParkResults(searchResults)
                    
                 })
             };
