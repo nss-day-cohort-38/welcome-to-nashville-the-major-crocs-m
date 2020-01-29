@@ -32,7 +32,7 @@ mainDom.innerHTML +=
     <button type="button" id="BM-btn">Search!</button>
 </div>
 <div  class="arts">
-    <label for="art-search">Art:</label>
+    <label for="art-search">Artwork:</label>
     <select class="art-search" id="ts-select" placeholder="Artworks">
         <option value="4743 REASONs">4743 REASONs</option>
         <option value="Adanedi">Adanedi</option>
