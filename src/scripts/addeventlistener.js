@@ -14,9 +14,6 @@ const tsSearchBtn = document.querySelector("#TS-btn");
 tsSearchBtn.addEventListener("click", getUserInput);
 
 //Save Clickin!
-
-
-
 const resultsDiv = document.getElementById('results-container');
 resultsDiv.addEventListener('click', (event) => {
     const idSplit = event.target.id.split('-')
@@ -32,3 +29,15 @@ const viewItenBtn = document.getElementById('see_itenerary');
 viewItenBtn.addEventListener('click', DbAPI.getItenerary);
 
 // DbAPI.getItenerary();
+
+//Delete Button
+const IteneraryContainer=document.getElementById('itinerary');
+IteneraryContainer.addEventListener('click', (event) => {
+    console.log(event);
+    const splitId = event.target.id.split('-');
+    if (splitId[0]==='deleteBtn'){
+        DbAPI.deleteDataFromAPI(splitId[1])
+        .then(DbAPI.getItenerary)
+        .then(itneraryDomManager.renderItinerary)
+    }
+})

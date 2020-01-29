@@ -13,5 +13,12 @@ const DbAPI = {
             body: JSON.stringify(obj)
         }
         ).then(r=>r.json())
+    },
+    deleteDataFromAPI: (id) => {
+        return fetch(dbURL+`/${id}`, {
+            method: "DELETE",
+
+
+        }).then(r=>r.json());
     }
 }

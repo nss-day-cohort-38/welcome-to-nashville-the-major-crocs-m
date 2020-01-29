@@ -4,6 +4,7 @@
       "name": "Soy Teriyaki Bistro",
       "address": "5008 Maryland Way, Brentwood 37027",
       "id": 1
+<<<<<<< HEAD
     },
     {
       "name": "Madison Park",
@@ -189,6 +190,8 @@
       "name": "Bells Bend Park",
       "address": "4187 Old Hickory Blvd",
       "id": 38
+=======
+>>>>>>> 4da08179be45e521a4ef47e82d8bb5f5b6ff0614
     }
   ]
 }
