@@ -5,7 +5,7 @@ const DbAPI = {
         
     },
     postDataToAPI: (obj) => {
-        fetch(dbURL, {
+        return fetch(dbURL, {
             method: "POST",
             headers: {
                 "content-type": "application/json"
