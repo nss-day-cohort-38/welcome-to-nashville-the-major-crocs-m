@@ -5,7 +5,25 @@ nav {
     text-align: center ;
 }
 
+/* ***** Form Styles ***** */
 
+div.searchDom {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 0px 0px 10px 5px;
+    border-bottom: 2px solid gray;
+    /* opacity: 75%; */
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+div.parks, div.concerts, div.arts, div.restaurant {
+    margin-bottom: 5px;
+}
+#see_itenerary {
+    width: 35%;
+}
 
 
 /* ***** Results Styling ***** */
@@ -15,8 +33,12 @@ nav {
     flex-direction: column;
     width: 85%;
     margin-left: auto;
-    margin-right: auto;
-
+    margin-right: auto; 
+    background-color: gray;
+    border-radius: 5px;
+    opacity: 85%;
+    text-align: center;
+    width: 50%;
 }
 
 #results-container section {
@@ -68,3 +90,8 @@ nav h1 {
     opacity: 1.0;
 }
 
+/* Footer Styling */
+
+footer {
+
+}
