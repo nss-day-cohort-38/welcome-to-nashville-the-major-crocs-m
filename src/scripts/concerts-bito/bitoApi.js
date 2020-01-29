@@ -17,9 +17,11 @@ concertSearchResultsDom = {
     concertDomFactory(concert) {
       return `
       <section class="concerts">
-      <div>Band: ${concert.name}</div>
+      <div id="name-${concert.id}">Band: ${concert.name}</div>
       <div>Date: ${concert.dates.start.localDate}</div>
+      <div id="address-${concert.id}">Location: ${concert._embedded.venues[0].name}</div>
       <div>Genre: ${concert.classifications[0].genre.name}</div>
+      <button id="saveBtn-${concert.id}">Add To Itinerary</button>
       </section>
       `;
     },
