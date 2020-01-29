@@ -5,7 +5,7 @@ const KKHtmlGenerator = {
         <h6>Address: <span id="address-${obj.restaurant.id}">${obj.restaurant.location.address}</span></h6>
         <h6>Cuisine: <span id="cuisines-${obj.restaurant.id}">${obj.restaurant.cuisines}</span></h6>
         <img class="kk-img" src="${obj.restaurant.photos[0].photo.url}">
-        <button type="button" id="${obj.restaurant.id}">Save</button>
+        <button type="button" id="saveBtn-${obj.restaurant.id}">Save</button>
         </div>`
     },
     databaseFactory: (obj) => {
