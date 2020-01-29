@@ -28,18 +28,8 @@ const searchResultsDomManager = {
         console.log(searchResults)
     },
 
-    itineraryFactory(park) {
-        const addressArr = park.mapped_location.human_address.split("\"")
-
-        return `
-            <section class="park" id='save-${park.acres}'>
-                <h2 class="park-name">${park.park_name}</h2>
-                <p class="address">${addressArr[3]}</p>
-            </section>
-        `
-    },
-
     // itineraryFactory(park) {
+    //     const addressArr = park.mapped_location.human_address.split("\"")
 
     //     return `
     //         <section class="park" id='save-${park.acres}'>
@@ -48,11 +38,32 @@ const searchResultsDomManager = {
     //         </section>
     //     `
     // },
+}
+const itneraryDomManager = {
+    itineraryFactory(obj) {
 
-    renderItinerary(parkSelection) {
-        container = document.getElementById('itinerary')
+        return `
+            <section class="obj" id='-${obj.id}'>
+                <h2 class="obj-name">${obj.name}</h2>
+                <p class="obj-address">${obj.address}</p>
+                <button type="button" id="deleteBtn-${obj.id}">Delete me</button>
+            </section>
+        `
+    },
 
-        container.innerHTML += this.itineraryFactory(parkSelection)
+    renderItinerary(arr) {
+        const container = document.getElementById('itinerary');
+        container.innerHTML="";
+        arr.forEach(obj => {
+            const html = `
+            <section class="obj" id='-${obj.id}'>
+                <h2 class="obj-name">${obj.name}</h2>
+                <p class="obj-address">${obj.address}</p>
+                <button type="button" id="deleteBtn-${obj.id}">Delete me</button>
+            </section>
+        `
+            container.innerHTML += html;
+        })
     }
     
 }
