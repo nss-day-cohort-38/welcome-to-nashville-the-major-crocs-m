@@ -19,22 +19,22 @@ tsSearchBtn.addEventListener("click", getUserInput);
 
 const resultsDiv = document.getElementById('results-container');
 resultsDiv.addEventListener('click', (event) => {
+    console.log(event);
     const idSplit = event.target.id.split('-')
     console.log(idSplit[1])
 
     if (event.target.id.includes('saveBtn')) {
 
-    const searchResultPromise = parksAPIManager.choosePark(idSplit[1])
-        
-        searchResultPromise.then(searchResults => {
-            console.log(searchResults)
-            searchResultsDomManager.renderItinerary(searchResults[0])
-            }
-            // objectCreator.createObjectFromID(idSplit[1])
-        )
+    objectCreator.createObjectFromID(idSplit[1])
     }
+    DbAPI.getItenerary().then(array => {
+        itneraryDomManager.renderItinerary(array);
+        // console.log(array)
+    });
 })
 
 //View Itenerary 
 const viewItenBtn = document.getElementById('see_itenerary');
 viewItenBtn.addEventListener('click', DbAPI.getItenerary);
+
+// DbAPI.getItenerary();
