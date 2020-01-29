@@ -47,6 +47,19 @@ nav {
     font-family: 'Noto Sans', sans-serif;
 
 }
+button {
+    color: midnightblue;
+    opacity: none;
+    transition: 0.3s ease;
+    padding: 3px;
+    border-radius: 2px;
+}
+button:hover {
+    color: white;
+    background-color: midnightblue;
+    padding:4px;
+    transition: 0.3s ease;
+}
 .kk-img {
     max-width: 140px;
     max-height: auto;
