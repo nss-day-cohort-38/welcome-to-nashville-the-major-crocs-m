@@ -41,6 +41,7 @@ mainDom.innerHTML +=
     <input class="restaurant-search" id="KK-input" placeholder="Restaurants Go Here!" type="text">
     <button type="button" id="KK-btn">Search!</button>
 </div>
+<button id="see_itenerary" type="button">View My Itenerary</button>
 </div>
 
 <div id="results-container">

@@ -1,3 +1,2 @@
-parksSearchEventManager.addSearchClickEventListener()
-
 searchEventManager.addSearchBtnClick()
+parksSearchEventManager.addSearchEnterEventListener()
