@@ -3,12 +3,13 @@
 
 nav {
     text-align: center ;
+    margin-bottom: 300px;
 }
 
 /* ***** Form Styles ***** */
 
 div.searchDom {
-    margin-top: 15px;
+    margin-top: 200px;
     margin-left: 10px;
     margin-bottom: 25px;
     padding: 0px 0px 10px 5px;
@@ -17,6 +18,12 @@ div.searchDom {
     display: flex;
     flex-direction: column;
     width: 35%;
+    margin: 0 auto;
+}
+.searchDom_Container {
+    background-color: #fafafa;
+    padding: 5%;
+    margin-bottom: 5%;
 }
 div.parks, div.concerts, div.arts, div.restaurant {
     margin-bottom: 5px;
