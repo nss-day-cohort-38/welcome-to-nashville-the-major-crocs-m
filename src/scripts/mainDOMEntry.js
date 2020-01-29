@@ -5,27 +5,27 @@ mainDom.innerHTML +=
     </nav>
     <div class="searchDom">
         <div  class="parks">
-        <label for="park-search">Parks:</label>
-        <select class="park-search" id="JAM-select" placeholder="Parks Features">
-            <option value="" selected disabled hidden>Select Park Feature</option>
-            <option value="community_center">Community Center</option>
-            <option value="nature_center">Nature Center</option>
-            <option value="playground">Playground</option>
-            <option value="picnic_shelters">Picnic Shelters</option>
-            <option value="restrooms_available">Restrooms Available</option>
-            <option value="ada_accessible">ADA Accessible</option>
-            <option value="dog_park">Dog Park</option>
-            <option value="baseball_fields">Baseball Fields</option>
-            <option value="basketball_courts">Basketball Courts</option>
-            <option value="disc_golf">Disc Golf</option>
-            <option value="golf_course">Golf Course</option>
-            <option value="hiking_trails">Hiking Trails</option>
-            <option value="horse_trails">Horse Trails</option>
-            <option value="mountain_bike_trails">Mountain Bike Trails</option>
-            <option value="canoe_launch">Canoe Launch</option>
-            <option value="boat_launch">Boat Launch</option>
-        </select>
-        <button type="button" id="JAM-btn">Search!</button>
+            <label for="park-search">Parks:</label>
+            <select class="park-search" id="JAM-select" placeholder="Parks Features">
+                <option value="" selected disabled hidden>Select Park Feature</option>
+                <option value="community_center">Community Center</option>
+                <option value="nature_center">Nature Center</option>
+                <option value="playground">Playground</option>
+                <option value="picnic_shelters">Picnic Shelters</option>
+                <option value="restrooms_available">Restrooms Available</option>
+                <option value="ada_accessible">ADA Accessible</option>
+                <option value="dog_park">Dog Park</option>
+                <option value="baseball_fields">Baseball Fields</option>
+                <option value="basketball_courts">Basketball Courts</option>
+                <option value="disc_golf">Disc Golf</option>
+                <option value="golf_course">Golf Course</option>
+                <option value="hiking_trails">Hiking Trails</option>
+                <option value="horse_trails">Horse Trails</option>
+                <option value="mountain_bike_trails">Mountain Bike Trails</option>
+                <option value="canoe_launch">Canoe Launch</option>
+                <option value="boat_launch">Boat Launch</option>
+            </select>
+            <button type="button" id="JAM-btn">Search!</button>
         </div>
         <div  class="concerts">
             <label for="concert-search">Concerts:</label>
@@ -61,12 +61,14 @@ mainDom.innerHTML +=
             <button type="button" id="KK-btn">Search!</button>
         </div>
         <button id="see_itenerary" type="button">View My Itenerary</button>
-</div>
-
-    <div id="results-container">
     </div>
 
-    <div id="itinerary">
+    <div id="container">
+        <div id="results-container" class="hide">
+        </div>
+
+        <div id="itinerary" class="hide">
+        </div>
     </div>
 
 <footer class="foobar">
