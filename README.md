@@ -8,8 +8,6 @@
 1. `cd` into to `src/`
 1. Start `http-server -p 8080` (Download [http-server](https://github.com/http-party/http-server#readme) if not installed)
 1. Open `http://127.0.0.1:8080/` in your browser
-1. Install JSON Server `npm install -g json-server` in your terminal
-1. Run JSON Server `json-server -p 8088 -w db.json`
 
 3. API Keys
     a. Create a file within the general Script directory called `APIKeys.js`
