@@ -37,11 +37,10 @@ nav {
     display: flex;
     justify-content: center;
     /* background-image: linear-gradient( midnightblue, rgba(43,43,43,0.9)); */
-    background: midnightblue;
+    background-color: rgba(10, 10, 44, 0.8);
     color: white;
     height: 100px;
     align-items: center;
-    opacity: 0.8;
     overflow: hidden;
 }
 
@@ -179,9 +178,19 @@ div.parks, div.concerts, div.arts, div.restaurant {
 
 /* Footer Styling */
 
-/* footer {
+footer {
     display: flex;
     justify-content: center;
-    
-    background-color: midnightblue;
-} */
+    height: 50px;
+    background-color: rgba(10, 10, 44, 0.8);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 2%;
+    font-size: 20px;
+}
+
+footer img {
+    margin-left: 50%;
+}
