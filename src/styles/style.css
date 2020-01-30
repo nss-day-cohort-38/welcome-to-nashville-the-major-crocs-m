@@ -120,6 +120,7 @@ div.parks, div.concerts, div.arts, div.restaurant {
 #container {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 5%;
 }
 
 #results-container {
