@@ -47,8 +47,11 @@ const resultsDiv = document.getElementById('results-container');
 resultsDiv.addEventListener('click', (event) => {
     const idSplit = event.target.id.split('-')
     if (event.target.id.includes('saveBtn')) {
+        //switch to mainObjectCreator.js
         objectCreator.createObjectFromID(idSplit[1])
+         //go to databaseuploadAPImanager.js
             .then(DbAPI.getItenerary)
+           //switch to JAM-searchResultsDomManager.js
             .then(itneraryDomManager.renderItinerary)
     }
 })
