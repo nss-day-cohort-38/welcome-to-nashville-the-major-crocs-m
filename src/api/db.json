@@ -1,34 +1,3 @@
 {
-  "Itenerary_Items": [
-    {
-      "name": "Alvin G. Beaman Park",
-      "address": "5911 Old Hickory Blvd",
-      "id": 1
-    },
-    {
-      "name": "Bells Bend Park",
-      "address": "4187 Old Hickory Blvd",
-      "id": 2
-    },
-    {
-      "name": "Shelby Bottoms Park",
-      "address": "1900 Davidson Street",
-      "id": 3
-    },
-    {
-      "name": "Shelby Bottoms Park",
-      "address": "1900 Davidson Street",
-      "id": 4
-    },
-    {
-      "name": "Shelby Bottoms Park",
-      "address": "1900 Davidson Street",
-      "id": 5
-    },
-    {
-      "name": "Shelby Bottoms Park",
-      "address": "1900 Davidson Street",
-      "id": 6
-    }
-  ]
+  "Itenerary_Items": []
 }
