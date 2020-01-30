@@ -3,7 +3,6 @@ const searchResultsDomManager = {
     
     parkFactory(park) {
         const addressArr = park.mapped_location.human_address.split("\"")
-        console.log(addressArr)
 
         return `
             <section class="park" id='${park.acres}'>
@@ -20,12 +19,10 @@ const searchResultsDomManager = {
         container.innerHTML = ""
         searchResults.forEach(park => {
             container.innerHTML += this.parkFactory(park)
-            console.log('item added')
         });   
         if (container.innerHTML == "") {
             container.innerHTML = "No park found . . . Search Again!"
         }
-        console.log(searchResults)
     },
 }
 
