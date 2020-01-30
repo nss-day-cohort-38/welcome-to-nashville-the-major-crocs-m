@@ -1,4 +1,4 @@
 .DS_Store
 src/APIKeys.js
 /src/scripts/APIKeys.js
-/api/db.json
+src/api/db.json
