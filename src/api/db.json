@@ -1,6 +1,7 @@
 {
   "Itenerary_Items": [
     {
+<<<<<<< HEAD
       "name": "Cane Ridge Park",
       "address": "419 Battle Rd",
       "id": 1
@@ -8,6 +9,20 @@
     {
       "name": "Hamilton Creek Park",
       "address": "2901 Bell Rd",
+=======
+      "name": "Alvin G. Beaman Park",
+      "address": "5911 Old Hickory Blvd",
+      "id": 1
+    },
+    {
+      "name": "Bells Bend Park",
+      "address": "4187 Old Hickory Blvd",
+      "id": 2
+    },
+    {
+      "name": "Shelby Bottoms Park",
+      "address": "1900 Davidson Street",
+>>>>>>> 3b31dda0f51411993ec3913cfa9696f5129749d2
       "id": 3
     },
     {
@@ -16,9 +31,20 @@
       "id": 4
     },
     {
+<<<<<<< HEAD
       "name": "Soy Teriyaki Bistro",
       "address": "5008 Maryland Way, Brentwood 37027",
       "id": 5
+=======
+      "name": "Shelby Bottoms Park",
+      "address": "1900 Davidson Street",
+      "id": 5
+    },
+    {
+      "name": "Shelby Bottoms Park",
+      "address": "1900 Davidson Street",
+      "id": 6
+>>>>>>> 3b31dda0f51411993ec3913cfa9696f5129749d2
     }
   ]
 }
