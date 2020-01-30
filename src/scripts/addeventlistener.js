@@ -57,12 +57,10 @@ resultsDiv.addEventListener('click', (event) => {
 const viewItenBtn = document.getElementById('see_itenerary');
 viewItenBtn.addEventListener('click',DbAPI.viewvcurrentItinerary);
 
-// DbAPI.getItenerary();
 
 //Delete Button
 const IteneraryContainer=document.getElementById('itinerary');
 IteneraryContainer.addEventListener('click', (event) => {
-    console.log(event);
     const splitId = event.target.id.split('-');
     if (splitId[0]==='deleteBtn'){
         DbAPI.deleteDataFromAPI(splitId[1])
