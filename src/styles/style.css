@@ -1,36 +1,102 @@
 
+/* ******* Body and Background Image ******  */
+
+* {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+body {
+    background: url("https://live.staticflickr.com/543/18500881285_18de0890a7_b.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+button {
+    color: midnightblue;
+    opacity: none;
+    transition: 0.3s ease;
+    padding: 3px;
+    border-radius: 2px;
+}
+button:hover {
+    color: white;
+    background-color: midnightblue;
+    padding:4px;
+    transition: 0.3s ease;
+}
+
+
 /* ***** Header and Nav Styling ***** */
 
 nav {
-    text-align: center ;
-    margin-bottom: 300px;
-}
-
-/* ***** Form Styles ***** */
-
-div.searchDom {
-    margin-top: 200px;
-    margin-left: 10px;
-    margin-bottom: 25px;
-    padding: 0px 0px 10px 5px;
-    border-bottom: 2px solid gray;
-    /* opacity: 75%; */
+    text-align: center;
     display: flex;
-    flex-direction: column;
-    width: 35%;
-    margin: 0 auto;
+    justify-content: center;
+    /* background-image: linear-gradient( midnightblue, rgba(43,43,43,0.9)); */
+    background: midnightblue;
+    color: white;
+    height: 100px;
+    align-items: center;
+    opacity: 0.8;
+    overflow: hidden;
 }
+
+nav h1 {
+    font-size: 80px;
+    opacity: 1.0;
+    overflow: hidden;
+}
+
+/* ******* Search Container and Contents ****** */
+
 .searchDom_Container {
     background-color: #fafafa;
     padding: 5%;
     margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
+#tabs {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+div.searchDom {
+
+    margin-left: 10px;
+    margin-bottom: 25px;
+    padding: 0px 0px 10px 5px;
+    border-top: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.searchDom_Container {
+    margin-top: 0px;
+    background-color: rgba(250,250,250,0.8);
+    padding: 4px;
+    margin-bottom: 5%;
+}
+
 div.parks, div.concerts, div.arts, div.restaurant {
     margin-bottom: 5px;
 }
-#see_itenerary {
+/* #see_itenerary {
     width: 35%;
-}
+} */
+
 
 
 /* ***** Results Styling ***** */
@@ -45,16 +111,12 @@ div.parks, div.concerts, div.arts, div.restaurant {
     /* width: 85%; */
     /* margin-left: auto;
     margin-right: auto;  */
-    background-color: gray;
+    background-color: rgba(128,128,128,0.8);
     border-radius: 5px;
-    opacity: 85%;
     text-align: center;
     width: 40%;
     height: 370px;
     overflow: scroll;
-}
-#itinerary {
-    background: white;
 }
 
 #results-container section {
@@ -68,9 +130,8 @@ div.parks, div.concerts, div.arts, div.restaurant {
 #itinerary {
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    background-color: rgba(128,128,128,0.8);
     border-radius: 5px;
-    opacity: 85%;
     text-align: center;
     width: 40%;
     /* margin-left: auto;
@@ -92,48 +153,10 @@ div.parks, div.concerts, div.arts, div.restaurant {
 
 /* **** Kurt's Restaurant Styling **** */
 
-* {
-    margin: 0;
-    font-family: 'Noto Sans', sans-serif;
 
-}
-button {
-    color: midnightblue;
-    opacity: none;
-    transition: 0.3s ease;
-    padding: 3px;
-    border-radius: 2px;
-}
-button:hover {
-    color: white;
-    background-color: midnightblue;
-    padding:4px;
-    transition: 0.3s ease;
-}
 .kk-img {
     max-width: 140px;
     max-height: auto;
-}
-body {
-    background: url("https://live.staticflickr.com/543/18500881285_18de0890a7_b.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-nav {
-    display: flex;
-    justify-content: center;
-    /* background-image: linear-gradient( midnightblue, rgba(43,43,43,0.9)); */
-    background: midnightblue;
-    color: white;
-    height: 100px;
-    align-items: center;
-    opacity: 0.8;
-}
-nav h1 {
-    font-size: 80px;
-    opacity: 1.0;
 }
 
 /* Footer Styling */
