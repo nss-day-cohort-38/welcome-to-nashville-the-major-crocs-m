@@ -55,7 +55,7 @@ resultsDiv.addEventListener('click', (event) => {
 
 //View Itenerary 
 const viewItenBtn = document.getElementById('see_itenerary');
-viewItenBtn.addEventListener('click', DbAPI.getItenerary);
+viewItenBtn.addEventListener('click',DbAPI.viewvcurrentItinerary);
 
 // DbAPI.getItenerary();
 
