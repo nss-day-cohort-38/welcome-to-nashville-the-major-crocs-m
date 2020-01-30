@@ -85,5 +85,6 @@ mainDom.innerHTML +=
     </div>
 
 <footer class="foobar">
-<h1>Thanks!<h1>
+<h1>Thanks Byran!<h1>
+<img src="https://media.giphy.com/media/3oKIPsx2VAYAgEHC12/giphy.gif" width = 100px height = auto />
 </footer>`
