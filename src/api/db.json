@@ -1,5 +1,4 @@
 {
- 
   "Itenerary_Items": [
     {
       "name": "Bryant Lamont",
@@ -25,6 +24,11 @@
       "name": "Band: All for the Hall: Keith Urban with Very Special Friends",
       "address": "Location: Bridgestone Arena",
       "id": 7
+    },
+    {
+      "name": "Shelby Park",
+      "address": "Shelby Ave at South 20th St",
+      "id": 8
     }
   ]
 }

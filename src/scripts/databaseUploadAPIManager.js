@@ -13,6 +13,7 @@ const DbAPI = {
             body: JSON.stringify(obj)
         }
         ).then(r=>r.json())
+        //look at .then in addEventListeners.js
     },
     deleteDataFromAPI: (id) => {
         return fetch(dbURL+`/${id}`, {
