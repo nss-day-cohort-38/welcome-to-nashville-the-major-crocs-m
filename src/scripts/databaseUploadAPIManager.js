@@ -20,5 +20,12 @@ const DbAPI = {
 
 
         }).then(r=>r.json());
+    },
+    viewvcurrentItinerary: () => {
+        fetch (dbURL)
+            .then(r=>r.json())
+            .then(itninerary => {
+                itneraryDomManager.renderItinerary(itninerary);
+            })
     }
 }
