@@ -1,3 +1,28 @@
+//  **** Event listeners for the tabs! ******
+
+const concertTab = document.getElementById('concertTab')
+concertTab.addEventListener('click', () => {
+
+})
+
+const artTab = document.getElementById('artTab')
+artTab.addEventListener('click', () => {
+    
+})
+
+const restaurantTab = document.getElementById('restaurantTab')
+restaurantTab.addEventListener('click', () => {
+    
+})
+
+const parksTab = document.getElementById('parkTab')
+parksTab.addEventListener('click', () => {
+    
+})
+
+
+
+
 //Restaurants click functionality
 const buttonKurt = document.querySelector('#KK-btn');
 buttonKurt.addEventListener('click', KKUserInput.getUserInput);
