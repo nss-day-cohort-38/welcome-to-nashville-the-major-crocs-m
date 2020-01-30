@@ -1,9 +1,34 @@
 {
   "Itenerary_Items": [
     {
-      "name": "Soy Teriyaki Bistro",
-      "address": "5008 Maryland Way, Brentwood 37027",
+      "name": "Alvin G. Beaman Park",
+      "address": "5911 Old Hickory Blvd",
       "id": 1
+    },
+    {
+      "name": "Bells Bend Park",
+      "address": "4187 Old Hickory Blvd",
+      "id": 2
+    },
+    {
+      "name": "Shelby Bottoms Park",
+      "address": "1900 Davidson Street",
+      "id": 3
+    },
+    {
+      "name": "Shelby Bottoms Park",
+      "address": "1900 Davidson Street",
+      "id": 4
+    },
+    {
+      "name": "Shelby Bottoms Park",
+      "address": "1900 Davidson Street",
+      "id": 5
+    },
+    {
+      "name": "Shelby Bottoms Park",
+      "address": "1900 Davidson Street",
+      "id": 6
     }
   ]
 }

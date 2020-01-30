@@ -3,9 +3,17 @@ mainDom.innerHTML +=
     `<nav class="navbar">
         <h1>Welcome To Nashville</h1>
     </nav>
+    
     <div class="searchDom_Container">
+        <div id='tabs'>
+            <button type='button' class='navTab' id=concertTab>Search Concerts</button>
+            <button type='button' class='navTab' id=artTab>Search Art Installations</button>
+            <button type='button' class='navTab' id=restaurantTab>Search Restaurants</button>
+            <button type='button' class='navTab' id=parkTab>Search Nashville Parks</button>
+            <button id="see_itenerary" type="button">View My Itenerary</button>
+        </div>
         <div class="searchDom">
-            <div  class="parks">
+            <div  id='parkSearch' class="parks hidden">
                 <label for="park-search">Parks:</label>
                 <select class="park-search" id="JAM-select" placeholder="Parks Features">
                     <option value="" selected disabled hidden>Select Park Feature</option>
@@ -28,12 +36,12 @@ mainDom.innerHTML +=
                 </select>
                 <button type="button" id="JAM-btn">Search!</button>
             </div>
-            <div  class="concerts">
+            <div id='concertSearch' class="concerts hidden">
                 <label for="concert-search">Concerts:</label>
                 <input class="concert-search" id="BM-input" placeholder="Search Genre Here!" type="text">
                 <button type="button" id="BM-btn">Search!</button>
             </div>
-            <div  class="arts">
+            <div id='artSearch' class="arts hidden">
                 <label for="art-search">Artwork:</label>
                 <select class="art-search" id="ts-select" placeholder="Artworks">
                     <option value="" selected disabled hidden>Select Artwork Feature</option>
@@ -56,12 +64,11 @@ mainDom.innerHTML +=
                 <button type="button" id="TS-btn">Search!</button>
                 <button type="button" id="show-all">Show All</button>
             </div>
-            <div  class="restaurant">
+            <div id='restaurantSearch' class="restaurant hidden">
                 <label for="restaurant-search">Restaurants:</label>
                 <input class="restaurant-search" id="KK-input" placeholder="Restaurants Go Here!" type="text">
                 <button type="button" id="KK-btn">Search!</button>
             </div>
-            <button id="see_itenerary" type="button">View My Itenerary</button>
         </div>
     </div>
 
