@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "Itenerary_Items": [
     {
       "name": "East Park",
@@ -7,7 +6,4 @@
       "id": 1
     }
   ]
-=======
-  "Itenerary_Items": []
->>>>>>> 1ca97a3fb0857d207f17d41e480fe45d586941b6
 }
