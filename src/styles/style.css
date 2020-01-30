@@ -1,15 +1,57 @@
 
-.hidden {
-    display: none;
+/* ******* Body and Background Image ******  */
+
+* {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+body {
+    background: url("https://live.staticflickr.com/543/18500881285_18de0890a7_b.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+button {
+    color: midnightblue;
+    opacity: none;
+    transition: 0.3s ease;
+    padding: 3px;
+    border-radius: 2px;
+}
+button:hover {
+    color: white;
+    background-color: midnightblue;
+    padding:4px;
+    transition: 0.3s ease;
 }
 
 
 /* ***** Header and Nav Styling ***** */
 
 nav {
-    text-align: center ;
-    margin-bottom: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* background-image: linear-gradient( midnightblue, rgba(43,43,43,0.9)); */
+    background: midnightblue;
+    color: white;
+    height: 100px;
+    align-items: center;
+    opacity: 0.8;
+    overflow: hidden;
 }
+
+nav h1 {
+    font-size: 80px;
+    opacity: 1.0;
+    overflow: hidden;
+}
+
+/* ******* Search Container and Contents ****** */
 
 .searchDom_Container {
     background-color: #fafafa;
@@ -22,25 +64,29 @@ nav {
 
 #tabs {
     text-align: center;
+    margin-bottom: 5px;
+}
+
+.hidden {
+    display: none;
 }
 
 
 div.searchDom {
-    margin-top: 200px;
+
     margin-left: 10px;
     margin-bottom: 25px;
     padding: 0px 0px 10px 5px;
-    border-bottom: 2px solid gray;
-    /* opacity: 75%; */
+    border-top: 2px solid gray;
     display: flex;
     flex-direction: column;
-    width: 35%;
     margin: 0 auto;
 }
 
 .searchDom_Container {
-    background-color: #fafafa;
-    padding: 5%;
+    margin-top: 0px;
+    background-color: rgba(250,250,250,0.8);
+    padding: 4px;
     margin-bottom: 5%;
 }
 
@@ -50,6 +96,7 @@ div.parks, div.concerts, div.arts, div.restaurant {
 /* #see_itenerary {
     width: 35%;
 } */
+
 
 
 /* ***** Results Styling ***** */
@@ -106,48 +153,10 @@ div.parks, div.concerts, div.arts, div.restaurant {
 
 /* **** Kurt's Restaurant Styling **** */
 
-* {
-    margin: 0;
-    font-family: 'Noto Sans', sans-serif;
 
-}
-button {
-    color: midnightblue;
-    opacity: none;
-    transition: 0.3s ease;
-    padding: 3px;
-    border-radius: 2px;
-}
-button:hover {
-    color: white;
-    background-color: midnightblue;
-    padding:4px;
-    transition: 0.3s ease;
-}
 .kk-img {
     max-width: 140px;
     max-height: auto;
-}
-body {
-    background: url("https://live.staticflickr.com/543/18500881285_18de0890a7_b.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-nav {
-    display: flex;
-    justify-content: center;
-    /* background-image: linear-gradient( midnightblue, rgba(43,43,43,0.9)); */
-    background: midnightblue;
-    color: white;
-    height: 100px;
-    align-items: center;
-    opacity: 0.8;
-}
-nav h1 {
-    font-size: 80px;
-    opacity: 1.0;
 }
 
 /* Footer Styling */

@@ -2,22 +2,26 @@
 
 const concertTab = document.getElementById('concertTab')
 concertTab.addEventListener('click', () => {
-
+    const concertSearch = document.getElementById('concertSearch')
+    concertSearch.classList.toggle('hidden')
 })
 
 const artTab = document.getElementById('artTab')
 artTab.addEventListener('click', () => {
-    
+    const artSearch = document.getElementById('artSearch')
+    artSearch.classList.toggle('hidden')
 })
 
 const restaurantTab = document.getElementById('restaurantTab')
 restaurantTab.addEventListener('click', () => {
-    
+    const restaurantSearch = document.getElementById('restaurantSearch')
+    restaurantSearch.classList.toggle('hidden')
 })
 
 const parksTab = document.getElementById('parkTab')
 parksTab.addEventListener('click', () => {
-    
+    const parkSearch = document.getElementById('parkSearch')
+    parkSearch.classList.toggle('hidden')
 })
 
 
