@@ -51,6 +51,19 @@ nav h1 {
     overflow: hidden;
 }
 
+/* Headers for itinerary and search restuls */
+
+#header-container {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+#header-container h2 {
+    margin-bottom: 5px;
+    text-shadow: 1px 1px black ;
+}
+
+
 /* ******* Search Container and Contents ****** */
 
 .searchDom_Container {
@@ -97,7 +110,12 @@ div.parks, div.concerts, div.arts, div.restaurant {
     width: 35%;
 } */
 
-
+/* Kurts Search results styling  */
+.KK-Restauran{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 /* ***** Results Styling ***** */
 #container {

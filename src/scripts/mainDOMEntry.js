@@ -71,6 +71,10 @@ mainDom.innerHTML +=
             </div>
         </div>
     </div>
+    <div id="header-container">
+    <h2>Search Results</h2>
+    <h2>Itinerary</h2>
+    </div>
 
     <div id="container">
         <div id="results-container" class="hide">
