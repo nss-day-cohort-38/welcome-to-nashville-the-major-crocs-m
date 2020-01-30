@@ -6,3 +6,32 @@
 1. `cd` into to `src/`
 1. Start `http-server -p 8080` (Download [http-server](https://github.com/http-party/http-server#readme) if not installed)
 1. Open `http://127.0.0.1:8080/` in your browser
+1. 
+
+2. 
+
+3. API Keys
+    a. Create a file within the general Script directory called `APIKeys.js`
+    b. within this folder copy this code...
+    `
+    const APIKeys = {
+    "parks": "",
+    "restaurants": "",
+    "art": "",       
+    "concerts": ""
+    `
+    c. Now you need to get keys from both ticketmaster and zomato (links at bottom);
+}
+
+4. 
+
+
+
+
+
+
+
+<!-- Stretchiest Goals
+Add an affordance to finalize an itinerary, and start a new one.
+Add ability to view one or all of the itineraries
+Instead of displaying all the search fields, search results, and itinerary list at the same time, add a nav bar or other feature(s) for hiding/showing what the user wants to view -->

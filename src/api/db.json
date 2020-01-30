@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "Itenerary_Items": [
     {
       "name": "Band: Mötley Crüe/Def Leppard/Poison/Joan Jett and the Blackhearts",
@@ -6,4 +7,7 @@
       "id": 1
     }
   ]
+=======
+  "Itenerary_Items": []
+>>>>>>> master
 }
