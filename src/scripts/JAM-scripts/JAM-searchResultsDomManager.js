@@ -27,18 +27,8 @@ const searchResultsDomManager = {
         }
         console.log(searchResults)
     },
-
-    // itineraryFactory(park) {
-    //     const addressArr = park.mapped_location.human_address.split("\"")
-
-    //     return `
-    //         <section class="park" id='save-${park.acres}'>
-    //             <h2 class="park-name">${park.park_name}</h2>
-    //             <p class="address">${addressArr[3]}</p>
-    //         </section>
-    //     `
-    // },
 }
+
 const itneraryDomManager = {
     itineraryFactory(obj) {
 
@@ -52,9 +42,11 @@ const itneraryDomManager = {
     },
 
     renderItinerary(arr) {
+        const newArr = arr.reverse();
         const container = document.getElementById('itinerary');
         container.innerHTML="";
-        arr.forEach(obj => {
+    
+        newArr.forEach(obj => {
             const html = `
             <section class="obj" id='-${obj.id}'>
                 <h2 class="obj-name">${obj.name}</h2>
