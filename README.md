@@ -26,7 +26,6 @@
     d. add the ticketmaster key to the "concerts" value in the APIKeys and the zomato key to the "restaurants" value.
     e. ticketmaster link :https://developer-acct.ticketmaster.com/user/register
     f.zomato link: https://developers.zomato.com/api
-}
 
 4. 
 
