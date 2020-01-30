@@ -15,7 +15,13 @@
     c. Now you need to get keys from both ticketmaster and zomato (links at bottom);
 }
 
-4. 
+4. Install JSON
+    a. cd into API subdirectory of src directory & start the JSON
+    server with this code...
+
+    json-server -p 8088 -w db.json 
+
+    b. Make sure the port is 8088
 
 
 
