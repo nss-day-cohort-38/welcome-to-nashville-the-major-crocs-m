@@ -184,7 +184,7 @@ footer {
     justify-content: center;
     height: 50px;
     background-color: rgba(10, 10, 44, 0.8);
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     color: white;
