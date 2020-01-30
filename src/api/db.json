@@ -1,4 +1,5 @@
 {
+ 
   "Itenerary_Items": [
     {
       "name": "Bryant Lamont",
@@ -24,11 +25,6 @@
       "name": "Band: All for the Hall: Keith Urban with Very Special Friends",
       "address": "Location: Bridgestone Arena",
       "id": 7
-    },
-    {
-      "name": "Band: Luke Bryan: Proud To Be Right Here 2020",
-      "address": "Location: Bridgestone Arena",
-      "id": 8
     }
   ]
 }

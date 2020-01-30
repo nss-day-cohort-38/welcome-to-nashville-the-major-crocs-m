@@ -6,7 +6,6 @@ const parksSearchEventManager = {
             const searchResultPromise = parksAPIManager.searchNashvilleParks(option)
             searchResultPromise.then(searchResults => {
                 searchResultsDomManager.renderParkResults(searchResults)
-                // console.log(option.value)
             })
         })
     },
@@ -31,17 +30,14 @@ const parksSearchEventManager = {
         
         resultsDiv.addEventListener('click', (event) => {
             const idSplit = event.target.id.split('-')
-            console.log(idSplit[1])
 
             if (event.target.id.includes('saveBtn')) {
 
             const searchResultPromise = parksAPIManager.choosePark(idSplit[1])
                 
                 searchResultPromise.then(searchResults => {
-                    console.log(searchResults)
                     searchResultsDomManager.renderItinerary(searchResults[0])
                     }
-                    // objectCreator.createObjectFromID(idSplit[1])
                 )
             }
     })
