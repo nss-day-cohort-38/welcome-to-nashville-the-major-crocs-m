@@ -1,4 +1,9 @@
 
+.hidden {
+    display: none;
+}
+
+
 /* ***** Header and Nav Styling ***** */
 
 nav {
@@ -6,7 +11,19 @@ nav {
     margin-bottom: 300px;
 }
 
-/* ***** Form Styles ***** */
+.searchDom_Container {
+    background-color: #fafafa;
+    padding: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#tabs {
+    text-align: center;
+}
+
 
 div.searchDom {
     margin-top: 200px;
@@ -20,17 +37,19 @@ div.searchDom {
     width: 35%;
     margin: 0 auto;
 }
+
 .searchDom_Container {
     background-color: #fafafa;
     padding: 5%;
     margin-bottom: 5%;
 }
+
 div.parks, div.concerts, div.arts, div.restaurant {
     margin-bottom: 5px;
 }
-#see_itenerary {
+/* #see_itenerary {
     width: 35%;
-}
+} */
 
 
 /* ***** Results Styling ***** */
