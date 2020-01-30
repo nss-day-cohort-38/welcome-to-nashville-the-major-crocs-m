@@ -45,16 +45,12 @@ div.parks, div.concerts, div.arts, div.restaurant {
     /* width: 85%; */
     /* margin-left: auto;
     margin-right: auto;  */
-    background-color: gray;
+    background-color: rgba(128,128,128,0.8);
     border-radius: 5px;
-    opacity: 85%;
     text-align: center;
     width: 40%;
     height: 370px;
     overflow: scroll;
-}
-#itinerary {
-    background: white;
 }
 
 #results-container section {
@@ -68,9 +64,8 @@ div.parks, div.concerts, div.arts, div.restaurant {
 #itinerary {
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    background-color: rgba(128,128,128,0.8);
     border-radius: 5px;
-    opacity: 85%;
     text-align: center;
     width: 40%;
     /* margin-left: auto;
